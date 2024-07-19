@@ -245,7 +245,14 @@ public class MainActivity extends AppCompatActivity {
             double tax = 5.00;
             double total = amt + tax;
 
+            // Header information
+            String header = "Roman Catholic Bishop of Daet\n"
+                    + "HOLY TRINITY COLLEGE SEMINARY FOUNDATION, Inc.\n"
+                    + "Holy Trinity College Seminary, P.3 Bautista 4604, Labo, Camarines Norte, Philippines\n"
+                    + "Non-VAT Reg. TIN: 628-911-376-00000\n\n";
+
             StringBuilder textData = new StringBuilder();
+            textData.append(header);
             textData.append("  ").append(cmpname).append("\n");
             textData.append("  ").append(invhdr).append("\n\n");
             textData.append("  GSTIN: ").append(gstin).append("\n");

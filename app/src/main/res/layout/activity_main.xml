@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_marginTop="400dp">
 
     <EditText
         android:id="@+id/deviceName"
@@ -28,15 +29,17 @@
         android:text="select printer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/deviceName"/>
+
     <Button
         android:id="@+id/printButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
-        android:text="Print"
+        android:layout_marginTop="36dp"
         android:onClick="print"
+        android:text="Print"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scanButton"/>
+        app:layout_constraintTop_toBottomOf="@+id/scanButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
